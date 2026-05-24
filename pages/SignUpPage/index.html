@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnBridge - Create Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/SignUpPage css/style.css" />
+</head>
+<body>
+
+  <div class="page">
+    <div class="card">
+
+      <!-- Logo -->
+      <div class="logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4L2 11l14 7 14-7-14-7z" fill="#2563EB"/>
+          <path d="M6 14v7c0 2.8 4.5 5 10 5s10-2.2 10-5v-7" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="11" x2="28" y2="19" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>LearnBridge</span>
+      </div>
+
+      <h1>Create Account</h1>
+      <p class="subtitle">Join LearnBridge today</p>
+
+      <div class="form">
+
+        <div class="field">
+          <label for="role">I am a</label>
+          <select id="role">
+            <option value="parent">Parent</option>
+            <option value="tutor">Tutor</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Input your full name" />
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="your.email@example.com" />
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="••••••••" />
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="terms" />
+          <label for="terms">I agree to the Terms and Conditions and Privacy Policy</label>
+        </div>
+
+        <button class="btn-create" onclick="handleRegister()">Create Account</button>
+
+        <p class="signin-link">Already have an account? <a href="/pages/SignInPage/index.html">Sign In</a></p>
+
+        <a href="/index.html" class="back-home">← Back to Home</a>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/SignUpPage/script.js"></script>
+
+</body>
+</html>

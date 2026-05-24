@@ -41,27 +41,16 @@
         <button class="btn-signin" onclick="handleSignIn()">Sign In</button>
 
         <p class="signup-link">
-          Don't have an account? <a href="register.html">Sign Up</a>
+          Don't have an account? <a href="/pages/SignUpPage/index.html">Sign Up</a>
         </p>
 
-        <a href="index.html" class="back-home">← Back to Home</a>
+        <a href="/index.html" class="back-home">← Back to Home</a>
       </div>
 
     </div>
   </div>
 
-  <script>
-    function handleSignIn() {
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-      if (!email || !password) {
-        alert('Please fill in all fields.');
-        return;
-      }
-      // TODO: connect to backend
-      alert('Sign in successful!');
-    }
-  </script>
+  <script src="/js/signin.js"></script>
 
 </body>
 </html>
